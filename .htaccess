@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteBase /
+Options All -Indexes +FollowSymlinks
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -а [OR]
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteRule ^resource/(.*)$ resource/$1 [L]
+RewriteRule ^.*$1 [NC,L]
+RewriteRule ^.*$1 index.php [NC,L]

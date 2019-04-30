@@ -1,0 +1,343 @@
+/*
+ * Created by PhpStorm
+ * User: Kravets Alexandr
+ * Styles for SEP
+ * Date: 26.03.2019
+ * Time: 13:02
+*/
+
+/* Сброс стилей */
+* { margin: 0; padding: 0;} html, body { height: 100%;}
+
+/* Основные стили */
+body {
+    background-image: url(/views/web/images/bg-repeat.png);
+	background-repeat: x, y;
+	background-attachment: fixed;
+	background-color: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайта */
+#header {
+    width: 1180px;
+    height: 30px;
+    margin: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #2c5879;
+    padding: 10px;
+}
+#header a {
+    margin-top: 0px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Центрирование тела сайта */
+#contain {
+    width: 1180px;
+    height: auto;
+    margin: auto;
+    padding:0;
+    left: 0;
+    top: 0;
+}
+
+/* Левая колонка - узкая колонка слева */
+#leftcol {
+    width: 250px;
+    float: left;
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px dotted #dcdcdc;
+}
+#leftcol form {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+#leftcol p {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+#leftcol a {
+    color: #2c5879;
+    text-decoration: none;
+}
+#leftcol a:hover {
+    color: #e18f00;
+    text-decoration: none;
+}
+
+#rss {
+    width: 250px;
+    float: left;
+    margin-top: 240px;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px dotted #dcdcdc;
+}
+#rss h4 {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+    float: left;
+}
+#rss p {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+}
+#rss a {
+    color: #2c5879;
+    text-decoration: none;
+}
+#rss a:hover {
+    color: #e18f00;
+    text-decoration: none;
+}
+#rss_img {
+    max-width: 30px;
+    height: auto;
+    float: right;
+    margin-right: 13px;
+    margin-top: 2px;
+}
+
+/* Контент - широкий блок справа */
+#content {
+    width: 880px;
+    min-height: 450px;
+    float: left;
+    margin-left: 300px;
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px dotted #dcdcdc;
+}
+#content h3 {
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+#content h4 {
+    margin-left: 10px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+#content p {
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+#content a {
+    color: #2c5879;
+    text-decoration: none;
+    font-weight: bold;
+}
+#content a:hover {
+    color: #e18f00;
+    text-decoration: none;
+    font-weight: bold;
+}
+#content_img {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Оформление полей ввода */
+#login #email_2 {
+    width: 215px;
+    padding: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 1px dotted #c1c1c1;
+    text-decoration: none;
+    background-color: #fffef4;
+    outline: none;
+    margin-bottom: 5px;
+}
+#login #password_3 {
+    width: 215px;
+    padding: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 1px dotted #c1c1c1;
+    text-decoration: none;
+    background-color: #fffef4;
+    outline: none;
+}
+#login #submit_2 {
+    padding: 5px 15px 5px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 0px dotted #fff;
+    background-color: #2c5879;
+    float: left;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+}
+#login #submit_2:hover {
+    background-color: #e18f00;
+}
+#leftcol #register {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 0px dotted #fff;
+    background-color: #2c5879;
+    float: right;
+    margin-right: 14px;
+    margin-top: -10px;
+    text-transform: uppercase;
+    outline: none;
+}
+#leftcol #register:hover {
+    background-color: #e18f00;
+}
+
+/* Оформление всплывающего окна регистрации */
+.modalReg {
+	position: fixed;
+	font-family: 'Open Sans', sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+}
+.modalReg:target {
+	display: block;
+	pointer-events: auto;
+}
+.modalReg > div {
+	width: 400px;
+    height: 300px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+    border: 1px dotted #c1c1c1;
+}
+
+#register_form2 > form #email, #password, #password_2 {
+    width: 215px;
+    padding: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 1px dotted #c1c1c1;
+    text-decoration: none;
+    background-color: #fffef4;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.submit_reg {
+    padding: 5px 15px 5px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 0px dotted #fff;
+    background-color: #2c5879;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+    margin-top: 20px;
+}
+.submit_reg:hover {
+    background-color: #e18f00;
+}
+
+
+#leftcol a.close {
+	background: #2c5879;
+    font-size: 10px;
+	color: #fff;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+#leftcol a.close:hover { background: #e18f00; color: fff; }
+
+/* Вывод ошибок в js */
+#inform {
+    font-size: 10px;
+    color: #e18f00;
+    margin-left: 10px;
+}
+/* Оформление подвала сайта */
+.footer {
+    width: 1180px;
+    height: auto;
+    margin: auto;
+    padding:0;
+    left: 0;
+    bottom: 0;
+}
+.footer > div {
+    width: 1176px;
+    height: 30px;
+    margin: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #2c5879;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 15px 5px 10px;
+    font-size: 12px;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+}
+.footer a {
+    color: #b9b9b9;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #e18f00;
+    text-decoration: none;
+}
