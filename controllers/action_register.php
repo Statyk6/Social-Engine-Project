@@ -43,7 +43,7 @@ if(isset($_POST['form']) && $_POST['form']=="reg"){
         $value = DB::getValue("SELECT `id` FROM `users` WHERE `email` = ?", array($_POST['email']));
         if($value != null) echo otv("err",7);
         else{
-        	$insert_id = DB::add("INSERT INTO users (email,password,date,ip) VALUES (?,?,?,?)", array($_POST['email'], password_hash(PASSWORD_DEFAULT, $_POST['password']), date('d-m-Y H:i:s'), $_SERVER['REMOTE_ADDR']));
+        	$insert_id = DB::add("INSERT INTO users (email,password,date,ip) VALUES (?,?,?,?)", array($_POST['email'], md5($_POST['password']), date('d-m-Y H:i:s'), $_SERVER['REMOTE_ADDR']));
         	if($insert_id>0){
         	    echo otv("ok","<font color='green'>Вы успешно зарегистрированы!</font>");
         	}
